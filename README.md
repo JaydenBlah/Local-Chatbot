@@ -38,20 +38,3 @@ pip install -r requirements.txt
 3. **Upload PDF Documents**: You can upload one or multiple PDF documents. The application will analyze the content of these documents to respond to queries.
 
 4. **Ask Questions**: Once your documents are processed, you can ask any question related to the content of your uploaded documents.
-
-### Technical Overview
-
-- **PDF Processing**: Utilizes `PyPDF2` for extracting text from PDF documents.
-- **Text Chunking**: Employs the `RecursiveCharacterTextSplitter` from LangChain for dividing the extracted text into manageable chunks.
-- **Vector Store Creation**: Uses `FAISS` for creating a searchable vector store from text chunks.
-- **Answer Generation**: Leverages `ChatGoogleGenerativeAI` from LangChain for generating answers to user queries using the context provided by the uploaded documents.
-
-
-### Support
-
-For issues, questions, or contributions, please refer to the GitHub repository issues section or submit a pull request.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
